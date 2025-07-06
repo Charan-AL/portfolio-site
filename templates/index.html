@@ -1,0 +1,205 @@
+{% extends 'base.html' %}
+{% block title %}About Me - Charan A L{% endblock %}
+{% block content %}
+<div class="hero-section">
+  <div class="animated-bg">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+  </div>
+  
+  <div class="hero-content">
+    <div class="profile-card">
+      <div class="profile-image-container">
+        <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Charan A L" class="profile-img">
+        <div class="profile-ring"></div>
+        <div class="profile-ring-2"></div>
+      </div>
+      <div class="profile-info">
+        <h1 class="name-title">
+          <span class="first-name">Charan</span>
+          <span class="last-name">A L</span>
+        </h1>
+        <p class="tagline">
+          <span class="typing-animation">Aspiring Full-Stack Developer</span>
+        </p>
+        <div class="role-tags">
+          <span class="tag">AI Enthusiast</span>
+          <span class="tag">B.Tech CSE Student</span>
+          <span class="tag">Problem Solver</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="bio-card glass-card">
+        <div class="card-header">
+          <div class="icon-container">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <h2>About Me</h2>
+        </div>
+        <div class="card-content">
+          <p>I'm a passionate B.Tech student in Computer Science Engineering at Vivekananda College of Engineering and Technology, currently in my second year with a CGPA of 7.1. I love solving problems using code, building meaningful software, and learning about AI-powered systems.</p>
+          <p>I'm skilled in C++, Python, and SQL, and have hands-on experience with Git, GitHub, and building console games using OOP. My latest project is a full-featured text-based adventure game written in C++ that includes puzzles, challenges, and even a mini Snake game!</p>
+        </div>
+      </div>
+
+      <div class="skills-card glass-card">
+        <div class="card-header">
+          <div class="icon-container">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h2>Skills & Expertise</h2>
+        </div>
+        <div class="card-content">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag cpp">C++</span>
+              <span class="skill-tag python">Python</span>
+              <span class="skill-tag sql">SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Technologies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">AI for Techies</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Core Concepts</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">DSA</span>
+              <span class="skill-tag">Databases</span>
+              <span class="skill-tag">Generative AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-card glass-card">
+        <div class="card-header">
+          <div class="icon-container">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          <h2>Featured Projects</h2>
+        </div>
+        <div class="card-content">
+          <div class="project-item">
+            <div class="project-header">
+              <h3>Text-Based Adventure Game</h3>
+              <a href="https://github.com/Charan-AL/My-cpp-game-.git" target="_blank" class="github-link">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+            </div>
+            <p>A multi-level C++ console game featuring logic puzzles, riddles, and a Snake mini-game. Built with object-oriented programming principles and advanced game mechanics.</p>
+            <div class="project-tags">
+              <span class="project-tag">C++</span>
+              <span class="project-tag">OOP</span>
+              <span class="project-tag">Game Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="education-card glass-card">
+        <div class="card-header">
+          <div class="icon-container">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <h2>Education</h2>
+        </div>
+        <div class="card-content">
+          <div class="education-item">
+            <h3>B.Tech in Computer Science Engineering</h3>
+            <p class="institution">Vivekananda College of Engineering and Technology</p>
+            <div class="education-details">
+              <span class="duration">2023 - 2027</span>
+              <span class="cgpa">CGPA: 7.1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="certifications-card glass-card">
+        <div class="card-header">
+          <div class="icon-container">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M12 15l3.5-3.5L12 8l-3.5 3.5L12 15z"></path>
+              <path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+          </div>
+          <h2>Certifications</h2>
+        </div>
+        <div class="card-content">
+          <div class="cert-list">
+            <div class="cert-list">
+  <a href="https://1drv.ms/f/c/428f9d1b5251bd13/Eo7Hl3OFlIhEhZw3T8iU3u8BGosrwOXaBkOBg_7Lq2RdIA?e=7ykNHu" class="cert-item" target="_blank">
+    <div class="cert-badge"></div>
+    <div class="cert-info">
+      <h4>Infosys Springboard</h4>
+      <p>Time Management, SQL, and DSA</p>
+    </div>
+  </a>
+  <a href="https://1drv.ms/b/c/428f9d1b5251bd13/EUkXTzl9-PJBvbprFzF2Q5QBvf_8SfcIuYEBR0TCD6Mffg?e=pFZPiA" class="cert-item" target="_blank">
+    <div class="cert-badge"></div>
+    <div class="cert-info">
+      <h4>Python using AI</h4>
+      <p>AI for Techies Platform</p>
+    </div>
+  </a>
+  <a href="https://1drv.ms/b/c/428f9d1b5251bd13/EWiuUqotUO9JgC7isjag2dUBKZeUNx8FJzU9xDiZpb4kvA?e=ODuG67" class="cert-item" target="_blank">
+    <div class="cert-badge"></div>
+    <div class="cert-info">
+      <h4>NEXT WAVE Leadership Certificate</h4>
+      <p>Generative AI for Students</p>
+    </div>
+  </a>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Let's Build Something Amazing Together</h2>
+      <p>Ready to turn ideas into reality? Let's connect and create the future of technology.</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="cta-btn primary">Get In Touch</a>
+        <a href="https://github.com/Charan-AL" target="_blank" class="cta-btn secondary">View GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

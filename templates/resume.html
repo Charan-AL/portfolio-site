@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% block title %}View Resume - Portfolio{% endblock %}
+{% block extra_css %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}">
+{% endblock %}
+{% block content %}
+<!-- PORTFOLIO-SITE/resume.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - Your Name</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="resume-container">
+    <header class="resume-header">
+      <div class="header-content">
+        <h1 class="name">CHARAN A L</h1>
+        <div class="subtitle">Computer Science Engineering Student</div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Puttur (Mangalore), Karnataka</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>8660611097</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>alcharan023@gmail.com</span>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/charan-al-5716642b8/" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/Charan-AL" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="resume-content">
+      <section class="resume-section">
+        <h2 class="section-title">
+          <i class="fas fa-bullseye"></i>
+          Career Objective
+        </h2>
+        <div class="section-content">
+          <p>Motivated and detail-oriented B.Tech student in Computer Science with a strong foundation in programming and problem-solving. Passionate about building efficient and creative software solutions. Seeking opportunities to learn, contribute, and grow in the field of software development and artificial intelligence.</p>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2 class="section-title">
+          <i class="fas fa-graduation-cap"></i>
+          Education
+        </h2>
+        <div class="section-content">
+          <div class="education-item">
+            <h3>B.Tech in Computer Science Engineering</h3>
+            <div class="institution">Vivekananda College of Engineering and Technology</div>
+            <div class="duration">2023 – 2027</div>
+            <div class="grade">CGPA: <span class="highlight">7.1</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2 class="section-title">
+          <i class="fas fa-code"></i>
+          Technical Skills
+        </h2>
+        <div class="section-content">
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Tools & Technologies</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">AI for Techies</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Concepts</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Data Structures & Algorithms</span>
+              <span class="skill-tag">Databases</span>
+              <span class="skill-tag">Generative AI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2 class="section-title">
+          <i class="fas fa-project-diagram"></i>
+          Projects
+        </h2>
+        <div class="section-content">
+          <div class="project-item">
+            <h3>Text-Based Adventure Game</h3>
+            <p>Developed a full-featured game with levels and interactive challenges using C++. Features include riddles, puzzles, and a mini snake game.</p>
+            <a href="https://github.com/Charan-AL/My-cpp-game-.git" target="_blank" class="project-link">
+              <i class="fab fa-github"></i>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2 class="section-title">
+          <i class="fas fa-award"></i>
+          Certifications & Achievements
+        </h2>
+        <div class="section-content">
+          <div class="certifications-list">
+            <div class="cert-item">
+              <h4>Infosys Springboard</h4>
+              <p>Time Management, Databases and SQL, Data Structures and Algorithms</p>
+            </div>
+            <div class="cert-item">
+              <h4>Python using AI</h4>
+              <p>AI for Techies Platform</p>
+            </div>
+            <div class="cert-item">
+              <h4>NEXT WAVE Leadership Certificate</h4>
+              <p>Leadership in "AI for Students: Build Your Own Generative AI Models"</p>
+            </div>
+          </div>
+          <a href="https://1drv.ms/f/c/428f9d1b5251bd13/Es6eYKmmzhxDr9f8m12OQTwBmnfesL5kcVCa029qpNFuOQ?e=5mTRzh" target="_blank" class="btn-primary">
+            <i class="fas fa-file-pdf"></i>
+            View Certificates
+          </a>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2 class="section-title">
+          <i class="fas fa-users"></i>
+          Soft Skills
+        </h2>
+        <div class="section-content">
+          <div class="soft-skills">
+            <div class="skill-pill">
+              <i class="fas fa-crown"></i>
+              Leadership
+            </div>
+            <div class="skill-pill">
+              <i class="fas fa-handshake"></i>
+              Teamwork
+            </div>
+            <div class="skill-pill">
+              <i class="fas fa-lightbulb"></i>
+              Problem-solving
+            </div>
+            <div class="skill-pill">
+              <i class="fas fa-rocket"></i>
+              Self-motivation
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="resume-footer">
+      <div class="footer-content">
+        <p>&copy; 2025 CHARAN A L</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+{% endblock %}
